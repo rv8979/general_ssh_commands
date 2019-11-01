@@ -3,3 +3,9 @@ uapi --user=cpanel_user Mysql create_database name=datbases_name
 
 # set PRIVILEGES
 uapi --user=cpanel_user Mysql set_privileges_on_database user=dB_user_name database=db_name privileges=ALL PRIVILEGES
+
+
+# run backup process force
+
+/usr/local/cpanel/bin/backup --force
+
